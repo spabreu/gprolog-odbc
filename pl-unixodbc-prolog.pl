@@ -46,7 +46,7 @@ odbc_type(varchar,	12).
 :- foreign(odbc_release_stmt(+integer), [return(boolean)]).
 
     % statement handle, Query string
-:- foreign(odbc_exec_direct(+integer, +string), [return(boolean)]).
+:- foreign(odbc_exec_direct(+integer, +codes), [return(boolean)]).
 
     % statement handle, col_no, type (from the SQL_type list), 
     % generic Prolog term

@@ -1,3 +1,9 @@
+gprolog-odbc-cx (1.0-3) unstable; urgency=low
+
+  * pl-unixodbc-prolog.pl: odbc_exec_direct/2 uses codes and not strings.
+
+ -- Salvador Abreu <spa@debian.org>  Thu, 27 Feb 2003 18:16:45 +0000
+
 gprolog-odbc-cx (1.0-2) unstable; urgency=low
 
   * Fixed dependencies.
