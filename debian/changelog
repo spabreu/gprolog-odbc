@@ -1,0 +1,5 @@
+gprolog-odbc-cx (1.0-1) unstable; urgency=low
+
+  * initial packaging.
+
+ -- Salvador Abreu <spa@debian.org>  Mon, 13 May 2002 17:02:20 +0100
