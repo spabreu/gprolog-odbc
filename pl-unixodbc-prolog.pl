@@ -35,6 +35,11 @@ odbc_type(double,	8).
 odbc_type(datetime,	9).
 odbc_type(timestamp,	11).
 odbc_type(varchar,	12).
+odbc_type(bit,          13).
+odbc_type(bitvar,       14).
+odbc_type(bool,         15).
+odbc_type(abstract,     16).
+
 
     % dsn,  connection handle
 :- foreign(odbc_connect(+string, -integer), [return(boolean)]).
