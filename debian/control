@@ -7,7 +7,7 @@ Build-Depends: gprolog, unixodbc-dev
 
 Package: gprolog-odbc-cx
 Architecture: any
-Depends: gprolog, ${shlib:Depends}
+Depends: gprolog-cx (=1.2.13-3), unixodbc-dev (>=2.2.4-2), ${shlib:Depends}
 Conflicts: 
 Description: UnixODBC interface for the Contextual GNU Prolog compiler.
  GProlog-UnixODBC is a low-level GNU Prolog binding for accessing databases
