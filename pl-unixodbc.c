@@ -298,17 +298,21 @@ Bool odbc_get_data(int i, SQLINTEGER  col_no,
     pval = &dval;
     valsize = sizeof dval;
     break;
+
   case SQL_SMALLINT:
   case SQL_INTEGER:
+  case 15:			/* SQL_BOOLEAN (from SQL3) */
     valctype = SQL_C_SLONG;
     pval = &ival;
     valsize = sizeof ival;
     break;	  
+
   case SQL_TIMESTAMP:
     valctype = SQL_C_TIMESTAMP;
     pval = &tval;
     valsize = sizeof tval;
     break;
+
   default:			/* All char and text types. */
     valctype = SQL_C_CHAR;
     pval = 0;
